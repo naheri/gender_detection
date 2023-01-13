@@ -8,7 +8,7 @@ Built with Keras.
 
 ## Installation
 
-I strongly adivse you to run this in a virtual environment ([Anaconda](https://www.anaconda.com/products/distribution), [Miniconda](https://docs.conda.io/en/latest/miniconda.html),[Miniforge](https://github.com/conda-forge/miniforge), [pyenv](https://github.com/pyenv/pyenv/blob/master/README.md), [venv](https://docs.python.org/fr/3/library/venv.html), etc...). Among all of thses, i recommend you Anaconda, Miniconda or Miniforge, more suited for data-science utilisation.
+I strongly adivse you to run this in a virtual environment ([Anaconda](https://www.anaconda.com/products/distribution), [Miniconda](https://docs.conda.io/en/latest/miniconda.html),[Miniforge](https://github.com/conda-forge/miniforge), [pyenv](https://github.com/pyenv/pyenv/blob/master/README.md), [venv](https://docs.python.org/fr/3/library/venv.html), etc...). Among all of these, i recommend you Anaconda, Miniconda or Miniforge, more suited for data-science utilisation.
 Create a virtual environment with python 3.8.X.
 If you are on MacOS Silicon like me, follow a [tutorial](https://www.youtube.com/watch?v=5DgWvU0p2bk) to install Tensorflow GPU if you can, or this [one](https://caffeinedev.medium.com/how-to-install-tensorflow-on-m1-mac-8e9b91d93706):
 
