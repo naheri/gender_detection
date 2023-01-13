@@ -80,6 +80,8 @@ Here is the classification report on the new 11649 images :
 
 ![alt text](./illustrations/classification_report.png)
 
+Here are some plots : 
+![alt text](./illustrations/plots.png)
 ## Example
 Detection by webcam
 ![alt text](./illustrations/example.png)

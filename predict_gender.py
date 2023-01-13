@@ -27,7 +27,7 @@ def get_gender(frame):
 
 def gender_by_webcam():
     # Open the webcam
-    webcam = cv2.VideoCapture(0)
+    webcam = cv2.VideoCapture(1)
 
 
     # Create a window called "webcam"
@@ -61,18 +61,16 @@ def gender_by_webcam():
             # draw rectangle over face
             cv2.rectangle(frame, (startX,startY), (endX,endY), (0,255,0), 2)
 
-        # crop the detected face region
-        face_crop = np.copy(frame[startY:endY,startX:endX])
+            # crop the detected face region
+            face_crop = np.copy(frame[startY:endY,startX:endX])
 
-        if (face_crop.shape[0]) < 10 or (face_crop.shape[1]) < 10:
-            continue
+            if (face_crop.shape[0]) < 10 or (face_crop.shape[1]) < 10:
+                continue
+            Y = startY - 10 if startY > 20 else startY + 10
 
-
-
-        Y = startY - 10 if startY > 20 else startY + 10
-        prediction = get_gender(face_crop)
-        print(prediction)
-        cv2.putText(frame, get_gender(face_crop), (startX, Y),  cv2.FONT_HERSHEY_SIMPLEX,
+            prediction = get_gender(face_crop)
+            print(prediction)
+            cv2.putText(frame, prediction, (startX, Y),  cv2.FONT_HERSHEY_SIMPLEX,
                         0.7, (0, 255, 0), 2)
 
         # display output
@@ -120,8 +118,6 @@ def gender_by_image(image_path):
         print(prediction)
         cv2.putText(image, prediction, (startX, Y),  cv2.FONT_HERSHEY_SIMPLEX,
                     0.7, (0, 255, 0), 2)
-
-    # display the image with rectangles drawn around the faces
 
 
     # display output
