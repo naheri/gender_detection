@@ -4,3 +4,4 @@ logs/
 __pycache__/
 **/logs
 train(UTKFace).ipynb
+train2.ipynb
