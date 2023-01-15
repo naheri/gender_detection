@@ -119,7 +119,6 @@ def gender_by_image(image_path):
         cv2.putText(image, prediction, (startX, Y),  cv2.FONT_HERSHEY_SIMPLEX,
                     0.7, (0, 255, 0), 2)
 
-
     # display output
     cv2.imshow("gender detection by image", image)
     print('image displayed')

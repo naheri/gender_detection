@@ -92,6 +92,8 @@ Detection by image on several persons
 Detection by image on one person
 ![alt text](./illustrations/female_detection_example.png)
 
+#### Web App
+![Detection by image on the web app](./illustrations/webapp_example.png)
 
 
 
